@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mixed-layout</title>
+</head>
+<style lang="css">
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .self-header {
+    margin: 0;
+    background-color: #010EFF;
+    height: 100px;
+  }
+
+  .self-header-main {
+    margin: 0 auto;
+    width: 60%;
+    height: 100px;
+    background-color: #FF6E01;
+  }
+
+  .self-container {
+    width: 60%;
+    height: 600px;
+    background-color: #CCC;
+    margin: 0 auto;
+  }
+
+  .self-left {
+    width: 30%;
+    height: 600px;
+    background-color: #FFF001;
+    float: left;
+  }
+
+  .self-right {
+    width: 70%;
+    height: 600px;
+    background-color: #99CC33;
+    float: right;
+  }
+
+  .self-subleft {
+    width: 60%;
+    height: 600px;
+    background-color: #016B00;
+    float: left;
+  }
+
+  .self-subright {
+    width: 40%;
+    height: 600px;
+    background-color: #0090FF;
+    float: right;
+  }
+
+  .self-footer {
+    width: 60%;
+    height: 100px;
+    background-color: #A80F01;
+    margin:0 auto;
+  }
+
+</style>
+<body>
+  <div class="self-header">
+    <div class="self-header-main"></div>
+  </div>
+  <div class="self-container">
+    <div class="self-left"></div>
+    <div class="self-right">
+      <div class="self-subleft"></div>
+      <div class="self-subright"></div>
+    </div>
+  </div>
+  <div class="self-footer"></div>
+</body>
+</html>

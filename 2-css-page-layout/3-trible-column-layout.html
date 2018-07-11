@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>trible-column-layout</title>
+</head>
+<style lang="css">
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .self-left {
+    width: 15%;
+    height: 500px;
+    background-color: #CCCCCC;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .self-right {
+    width: 15%;
+    height: 500px;
+    background-color: #FECCCB;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+
+  .self-main {
+    width: 60%;
+    height: 500px;
+    background-color: #99CDFF;
+    margin: 0 20%;
+  }
+
+  .self-main p {
+    margin: 0;
+  }
+</style>
+<body>
+  <div class="self-left">left</div>
+  <div class="self-main"><p>完成任务后，请验证是否与实践描述效果一致，如一致，恭喜您，你已经掌握此技能，否则，请重复学习此节内容。如果代码无误，效果未出现，请拷贝到本地编辑器进行调试。</p></div>
+  <div class="self-right">right</div>
+</body>
+</html>
