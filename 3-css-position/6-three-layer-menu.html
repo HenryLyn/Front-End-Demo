@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>6-three-layer-menu</title>
+</head>
+<style lang="css">
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 3000px;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .float-menu {
+    width: 160px;
+    height: auto;
+    position: fixed;
+    background: white;
+    left: 0;
+    top: 30%;
+  }
+
+  .first-level-menu li {
+    width: 160px;
+    height: auto;
+    border: 1px solid white;
+    background-color: #353438;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    cursor: pointer;
+  }
+
+  .first-level-menu li:hover .second-level-menu ul li {
+    display: block;
+  }
+
+  .second-level-menu li {
+    width: 160px;
+    height: auto;
+    border: 1px dashed black;
+    background-color: white;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+    position: relative;
+  }
+
+  .third-level-menu {
+    width: 160px;
+    height: auto;
+    position: absolute;
+    left: 160px;
+    top: 0px;
+    display: none;
+  }
+
+  .third-level-menu-li{
+    width: 160px;
+    height: 40px;
+    border: 1px solid white;
+    background-color: #464446;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .second-level-menu ul li:hover .third-level-menu {
+    display: block;
+  }
+
+</style>
+<body>
+  <div class="float-menu">
+    <ul class="first-level-menu">
+      <li>第一级菜单
+        <div class="second-level-menu">
+            <ul>
+              <li>第二级菜单
+                <div class="third-level-menu">
+                  <div class="third-level-menu-li">第三季菜单</div>
+                  <div class="third-level-menu-li">第三季菜单</div>
+                  <div class="third-level-menu-li">第三季菜单</div>
+                </div>
+              </li>
+              <li>第二级菜单
+                <div class="third-level-menu">
+                  <div class="third-level-menu-li">第三季菜单</div>
+                  <div class="third-level-menu-li">第三季菜单</div>
+                </div>
+              </li>
+              <li>第二级菜单
+                <div class="third-level-menu">
+                  <div class="third-level-menu-li">第三季菜单</div>
+                  <div class="third-level-menu-li">第三季菜单</div>
+                </div>
+              </li>
+              <li>第二级菜单
+                <div class="third-level-menu">
+                  <div class="third-level-menu-li">第三季菜单</div>
+                  <div class="third-level-menu-li">第三季菜单</div>
+                  <div class="third-level-menu-li">第三季菜单</div>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </li>
+      <li>第一级菜单
+          <div class="second-level-menu">
+              <ul>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+              </ul>
+          </div>
+      </li>
+      <li>第一级菜单
+          <div class="second-level-menu">
+              <ul>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+              </ul>
+          </div>
+      </li>
+      <li>第一级菜单
+          <div class="second-level-menu">
+              <ul>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+              </ul>
+          </div>
+      </li>
+      <li>第一级菜单
+          <div class="second-level-menu">
+              <ul>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+                <li>第二级菜单</li>
+              </ul>
+          </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
