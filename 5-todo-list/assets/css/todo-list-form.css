@@ -1,0 +1,24 @@
+#add-todo:hover {
+  background-color: #BFBFBF;
+}
+
+#todo-list-form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+li {
+  background: #BFBFBF;
+}
+
+.panel-body {
+  text-align: left;
+}
+
+#btn-completed:hover {
+   color: #0FE129;
+}
+
+#btn-deleted:hover {
+  color: red;
+}
